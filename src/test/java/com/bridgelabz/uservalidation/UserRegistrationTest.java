@@ -7,7 +7,7 @@ public class UserRegistrationTest {
     @Test
     public void givenFirstName_whenProper_returnTrue() {
         UserRegistration userRegistration = new UserRegistration();
-        boolean status = userRegistration.validateFirstName("Fakk");
+        boolean status = userRegistration.validateFirstName("Faizan");
         Assert.assertEquals(true, status);
     }
 
@@ -19,9 +19,30 @@ public class UserRegistrationTest {
     }
 
     @Test
-    public void givenFirst_whenInvalid_returnFalse() {
+    public void givenFirstName_whenInvalid_returnFalse() {
         UserRegistration userRegistration = new UserRegistration();
         boolean status = userRegistration.validateFirstName("faizan");
+        Assert.assertEquals(false, status);
+    }
+
+    @Test
+    public void givenLastName_whenProper_returnTrue() {
+        UserRegistration userRegistration = new UserRegistration();
+        boolean status = userRegistration.validateLastName("Faizan");
+        Assert.assertEquals(true, status);
+    }
+
+    @Test
+    public void givenLastName_whenShort_returnFalse() {
+        UserRegistration userRegistration = new UserRegistration();
+        boolean status = userRegistration.validateLastName("Fa");
+        Assert.assertEquals(false, status);
+    }
+
+    @Test
+    public void givenLastName_whenInvalid_returnFalse() {
+        UserRegistration userRegistration = new UserRegistration();
+        boolean status = userRegistration.validateLastName("faizan");
         Assert.assertEquals(false, status);
     }
 }
