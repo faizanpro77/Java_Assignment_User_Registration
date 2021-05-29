@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.bridgelabz.uservalidation.EmailValidator" tests="13" skipped="0" failures="0" errors="0" timestamp="2021-05-29T13:32:44" hostname="DESKTOP-I19OHT9" time="0.083">
+<testsuite name="com.bridgelabz.uservalidation.EmailValidator" tests="13" skipped="0" failures="0" errors="0" timestamp="2021-05-29T14:31:24" hostname="DESKTOP-I19OHT9" time="0.08">
   <properties/>
-  <testcase name="emailChecker[0]" classname="com.bridgelabz.uservalidation.EmailValidator" time="0.028"/>
+  <testcase name="emailChecker[0]" classname="com.bridgelabz.uservalidation.EmailValidator" time="0.023"/>
   <testcase name="emailChecker[1]" classname="com.bridgelabz.uservalidation.EmailValidator" time="0.001"/>
   <testcase name="emailChecker[2]" classname="com.bridgelabz.uservalidation.EmailValidator" time="0.001"/>
-  <testcase name="emailChecker[3]" classname="com.bridgelabz.uservalidation.EmailValidator" time="0.002"/>
-  <testcase name="emailChecker[4]" classname="com.bridgelabz.uservalidation.EmailValidator" time="0.001"/>
-  <testcase name="emailChecker[5]" classname="com.bridgelabz.uservalidation.EmailValidator" time="0.001"/>
+  <testcase name="emailChecker[3]" classname="com.bridgelabz.uservalidation.EmailValidator" time="0.001"/>
+  <testcase name="emailChecker[4]" classname="com.bridgelabz.uservalidation.EmailValidator" time="0.005"/>
+  <testcase name="emailChecker[5]" classname="com.bridgelabz.uservalidation.EmailValidator" time="0.002"/>
   <testcase name="emailChecker[6]" classname="com.bridgelabz.uservalidation.EmailValidator" time="0.001"/>
-  <testcase name="emailChecker[7]" classname="com.bridgelabz.uservalidation.EmailValidator" time="0.004"/>
-  <testcase name="emailChecker[8]" classname="com.bridgelabz.uservalidation.EmailValidator" time="0.004"/>
+  <testcase name="emailChecker[7]" classname="com.bridgelabz.uservalidation.EmailValidator" time="0.018"/>
+  <testcase name="emailChecker[8]" classname="com.bridgelabz.uservalidation.EmailValidator" time="0.006"/>
   <testcase name="emailChecker[9]" classname="com.bridgelabz.uservalidation.EmailValidator" time="0.001"/>
   <testcase name="emailChecker[10]" classname="com.bridgelabz.uservalidation.EmailValidator" time="0.001"/>
-  <testcase name="emailChecker[11]" classname="com.bridgelabz.uservalidation.EmailValidator" time="0.001"/>
-  <testcase name="emailChecker[12]" classname="com.bridgelabz.uservalidation.EmailValidator" time="0.0"/>
+  <testcase name="emailChecker[11]" classname="com.bridgelabz.uservalidation.EmailValidator" time="0.0"/>
+  <testcase name="emailChecker[12]" classname="com.bridgelabz.uservalidation.EmailValidator" time="0.003"/>
   <system-out><![CDATA[email ids -->abc@yahoo.com
 email ids -->abc-100@yahoo.com
 email ids -->abc.100@yahoo.com
