@@ -47,7 +47,7 @@ public class UserRegistrationTest {
     }
 
     @Test
-    public void givenMobileNumber_whenValid_returnFalse() {
+    public void givenMobileNumber_whenValid_returnTrue() {
         UserRegistration userRegistration = new UserRegistration();
         boolean status =  userRegistration.validateMobileNumber("91 7775962642");
         Assert.assertEquals(true, status);
