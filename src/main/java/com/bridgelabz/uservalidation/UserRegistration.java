@@ -21,6 +21,7 @@ public class UserRegistration {
     }
 
     public boolean validateMobileNumber(String mobileNumber) {
+        System.out.println("MobileNumber : "+mobileNumber);
         return patternChecker(mobileNumber, MOBILE_PATTERN);
     }
 

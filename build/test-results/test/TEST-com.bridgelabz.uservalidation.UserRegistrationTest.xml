@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.bridgelabz.uservalidation.UserRegistrationTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2021-05-29T13:17:39" hostname="DESKTOP-I19OHT9" time="0.019">
+<testsuite name="com.bridgelabz.uservalidation.UserRegistrationTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2021-05-29T13:32:44" hostname="DESKTOP-I19OHT9" time="0.016">
   <properties/>
-  <testcase name="givenLastName_whenInvalid_returnFalse" classname="com.bridgelabz.uservalidation.UserRegistrationTest" time="0.002"/>
+  <testcase name="givenLastName_whenInvalid_returnFalse" classname="com.bridgelabz.uservalidation.UserRegistrationTest" time="0.001"/>
   <testcase name="givenLastName_whenShort_returnFalse" classname="com.bridgelabz.uservalidation.UserRegistrationTest" time="0.001"/>
-  <testcase name="givenMobileNumber_whenValid_returnFalse" classname="com.bridgelabz.uservalidation.UserRegistrationTest" time="0.002"/>
-  <testcase name="givenFirstName_whenProper_returnTrue" classname="com.bridgelabz.uservalidation.UserRegistrationTest" time="0.001"/>
+  <testcase name="givenMobileNumber_whenValid_returnFalse" classname="com.bridgelabz.uservalidation.UserRegistrationTest" time="0.006"/>
+  <testcase name="givenFirstName_whenProper_returnTrue" classname="com.bridgelabz.uservalidation.UserRegistrationTest" time="0.0"/>
   <testcase name="givenLastName_whenProper_returnTrue" classname="com.bridgelabz.uservalidation.UserRegistrationTest" time="0.001"/>
-  <testcase name="givenFirstName_whenInvalid_returnFalse" classname="com.bridgelabz.uservalidation.UserRegistrationTest" time="0.001"/>
-  <testcase name="givenFirstName_whenShort_returnFalse" classname="com.bridgelabz.uservalidation.UserRegistrationTest" time="0.001"/>
-  <system-out><![CDATA[]]></system-out>
+  <testcase name="givenFirstName_whenInvalid_returnFalse" classname="com.bridgelabz.uservalidation.UserRegistrationTest" time="0.0"/>
+  <testcase name="givenFirstName_whenShort_returnFalse" classname="com.bridgelabz.uservalidation.UserRegistrationTest" time="0.0"/>
+  <system-out><![CDATA[MobileNumber : 91 7775962642
+]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
