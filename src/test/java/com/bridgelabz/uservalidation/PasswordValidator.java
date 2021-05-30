@@ -15,7 +15,7 @@ public class PasswordValidator {
     @Test
     public void givenPassword_when1UpperCase_returnTrue() {
         UserRegistration userRegistration = new UserRegistration();
-        boolean status = userRegistration.validatePassword("faIZ@278");
+        boolean status = userRegistration.validatePassword("faIZ@178");
         Assert.assertEquals(true, status);
     }
 
@@ -24,6 +24,13 @@ public class PasswordValidator {
         UserRegistration userRegistration = new UserRegistration();
         boolean status = userRegistration.validatePassword("faIz@378");
         Assert.assertEquals(true,  status);
+    }
+
+    @Test
+    public void givenPassword_whenExactly1SpecialCharacter_returnTrue() {
+        UserRegistration userRegistration = new UserRegistration();
+        boolean status = userRegistration.validatePassword("fa$Iz&@378");
+        Assert.assertEquals(false, status);
     }
 }
 
