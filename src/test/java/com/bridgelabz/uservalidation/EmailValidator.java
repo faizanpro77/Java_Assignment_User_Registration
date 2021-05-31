@@ -26,6 +26,10 @@ public class EmailValidator {
     public void emailChecker() {
         System.out.println("email ids -->" + this.email);
         boolean result = userRegistration.validateEmail(email);
+        if(result)
+            System.out.println("Happy");
+        else
+            System.out.println("Sad");
         Assert.assertEquals(this.status, result);
     }
 }
