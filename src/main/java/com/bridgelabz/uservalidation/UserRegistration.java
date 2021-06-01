@@ -10,10 +10,13 @@ public class UserRegistration {
     private static final  String PASSWORD_PATTERN = "^(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*])(?!(?:.*[!@#$%^&*]){2})[a-zA-Z0-9!@#$%^&*]{8,}$";
 
     public boolean validateFirstName(String firstName) {
-        System.out.println("firstName : "+firstName);
-        return patternChecker(firstName, NAME_PATTERN);
+        System.out.println("firstName : " + firstName);
+        try {
+            return patternChecker(firstName, NAME_PATTERN);
+        } catch (Exception ex) {
+        throw new InvalidUserRegistrationException("Invalid name enter correct name");
+        }
     }
-
     public boolean validateLastName(String lastName) {
         System.out.println("lastName : "+lastName);
         return patternChecker(lastName, NAME_PATTERN);

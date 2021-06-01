@@ -7,13 +7,18 @@ public class UserRegistrationTest {
     @Test
     public void givenFirstName_whenProper_returnTrue() {
         UserRegistration userRegistration = new UserRegistration();
-        boolean status = userRegistration.validateFirstName("Faizan");
-        if(status)
-            System.out.println("Happy");
-        else
-            System.out.println("Sad");
-        Assert.assertEquals(true, status);
+        try {
+            boolean status = userRegistration.validateFirstName("Faizan");
+            if (status)
+                System.out.println("Happy");
+            else
+                System.out.println("Sad");
+            Assert.assertEquals(true, status);
+        } catch (InvalidUserRegistrationException ex){
+        Assert.assertEquals(InvalidUserRegistrationException.class, ex.getClass());
     }
+    }
+
 
     @Test
     public void givenFirstName_whenShort_returnFalse() {
@@ -82,13 +87,3 @@ public class UserRegistrationTest {
     }
 }
 
-// public void testMoodAnalysis_whenSad_shouldReturnSad() {
-//        UserRegistation moodAnalyser = new UserRegistation();
-//        String mood = moodAnalyser.analyserMoodSad("This is a sad message");
-//        Assert.assertEquals("sad", mood);
-//    }
-//
-//    public static final String analyserMoodSad (String message)  {
-//        message.contains("This is a sad message");
-//        return "sad";
-//    }
