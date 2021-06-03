@@ -1,52 +1,22 @@
-email ids -->abc@yahoo.com
-Happy
- email ids -->abc-100@yahoo.com
-Happy
- email ids -->abc.100@yahoo.com
-Happy
-email ids -->abc111@abc.com
-Happy
-email ids -->abc-100@abc.net
-Happy
-!email ids -->abc.100@abc.com.au
-Happy
-email ids -->abc@1.com
-Happy
-	 email ids -->abc+100@gmail.com
-	Happy
-
-"email ids -->invalid123@pole.com
-
-Happy
-email ids -->abc@.com.my
-Sad
-email ids -->abc123@gmail.a
-Sad
-email ids -->abc123@.com
-Sad
-email ids -->abc123@.com.com
-Sad
-email ids -->abc()*@gmail.com
-Sad
-Password : faIz@378
-Happy
-Password : fa$Iz&@378
-Sad
-Password : faiZ@178
-Happy
-Password : faIZ@178
-Happy
-lastName : arbaz
-Sad
-lastName : Fa
-Sad
-firstName : Faizan
-Happy
-MobileNumber : 91 7775962642
-Happy
-lastName : Faizan
-Happy
-firstName : faizan
-Sad
-firstName : Fa
-Sad
+Password : Faez@378
+ Password : null
+!Password : Faiz@378
+"Password : faiZ@178
+#Password : faIZ@178
+%$lastName : arbaz
+%&firstName : null
+%' MobileNumber : 917775962645564
+%(lastName : Fa
+%)MobileNumber : 91 77759626
+%*firstName : Shaikh
+%+firstName : saikh
+%,MobileNumber : 91 7775962642
+%-MobileNumber : null
+%.lastName : null
+%/lastName : Faizan
+%0firstName : faizan
+%1firstName : Fa
+%2firstName : Saikh
+%2lastName : Faizan
+%2MobileNumber : 91 7775962642
+%2Password : faIz@378

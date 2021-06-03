@@ -1,2 +1,4 @@
+com/bridgelabz/uservalidation/UserRegistrationInvalidException.java
+ com.bridgelabz.uservalidation.UserRegistrationInvalidException
 com/bridgelabz/uservalidation/UserRegistration.java
  com.bridgelabz.uservalidation.UserRegistration

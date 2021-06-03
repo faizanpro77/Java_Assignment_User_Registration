@@ -1,48 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.bridgelabz.uservalidation.EmailValidator" tests="14" skipped="0" failures="0" errors="0" timestamp="2021-05-31T18:13:36" hostname="DESKTOP-I19OHT9" time="0.076">
+<testsuite name="com.bridgelabz.uservalidation.EmailValidator" tests="28" skipped="0" failures="0" errors="0" timestamp="2021-06-02T18:46:05" hostname="DESKTOP-I19OHT9" time="0.065">
   <properties/>
-  <testcase name="emailChecker[0]" classname="com.bridgelabz.uservalidation.EmailValidator" time="0.024"/>
-  <testcase name="emailChecker[1]" classname="com.bridgelabz.uservalidation.EmailValidator" time="0.002"/>
-  <testcase name="emailChecker[2]" classname="com.bridgelabz.uservalidation.EmailValidator" time="0.001"/>
-  <testcase name="emailChecker[3]" classname="com.bridgelabz.uservalidation.EmailValidator" time="0.002"/>
-  <testcase name="emailChecker[4]" classname="com.bridgelabz.uservalidation.EmailValidator" time="0.002"/>
-  <testcase name="emailChecker[5]" classname="com.bridgelabz.uservalidation.EmailValidator" time="0.002"/>
-  <testcase name="emailChecker[6]" classname="com.bridgelabz.uservalidation.EmailValidator" time="0.001"/>
-  <testcase name="emailChecker[7]" classname="com.bridgelabz.uservalidation.EmailValidator" time="0.001"/>
-  <testcase name="emailChecker[8]" classname="com.bridgelabz.uservalidation.EmailValidator" time="0.008"/>
-  <testcase name="emailChecker[9]" classname="com.bridgelabz.uservalidation.EmailValidator" time="0.0"/>
-  <testcase name="emailChecker[10]" classname="com.bridgelabz.uservalidation.EmailValidator" time="0.001"/>
-  <testcase name="emailChecker[11]" classname="com.bridgelabz.uservalidation.EmailValidator" time="0.001"/>
-  <testcase name="emailChecker[12]" classname="com.bridgelabz.uservalidation.EmailValidator" time="0.003"/>
-  <testcase name="emailChecker[13]" classname="com.bridgelabz.uservalidation.EmailValidator" time="0.016"/>
-  <system-out><![CDATA[email ids -->abc@yahoo.com
-Happy
-email ids -->abc-100@yahoo.com
-Happy
-email ids -->abc.100@yahoo.com
-Happy
-email ids -->abc111@abc.com
-Happy
-email ids -->abc-100@abc.net
-Happy
-email ids -->abc.100@abc.com.au
-Happy
-email ids -->abc@1.com
-Happy
-email ids -->abc+100@gmail.com
-Happy
-email ids -->invalid123@pole.com
-Happy
-email ids -->abc@.com.my
-Sad
-email ids -->abc123@gmail.a
-Sad
-email ids -->abc123@.com
-Sad
-email ids -->abc123@.com.com
-Sad
-email ids -->abc()*@gmail.com
-Sad
-]]></system-out>
+  <testcase name="givenEmail_whenIsValid_returntrue[0]" classname="com.bridgelabz.uservalidation.EmailValidator" time="0.003"/>
+  <testcase name="givenEmail_whenNull_shouldThrowInvalidMoodException[0]" classname="com.bridgelabz.uservalidation.EmailValidator" time="0.001"/>
+  <testcase name="givenEmail_whenIsValid_returntrue[1]" classname="com.bridgelabz.uservalidation.EmailValidator" time="0.001"/>
+  <testcase name="givenEmail_whenNull_shouldThrowInvalidMoodException[1]" classname="com.bridgelabz.uservalidation.EmailValidator" time="0.001"/>
+  <testcase name="givenEmail_whenIsValid_returntrue[2]" classname="com.bridgelabz.uservalidation.EmailValidator" time="0.001"/>
+  <testcase name="givenEmail_whenNull_shouldThrowInvalidMoodException[2]" classname="com.bridgelabz.uservalidation.EmailValidator" time="0.001"/>
+  <testcase name="givenEmail_whenIsValid_returntrue[3]" classname="com.bridgelabz.uservalidation.EmailValidator" time="0.001"/>
+  <testcase name="givenEmail_whenNull_shouldThrowInvalidMoodException[3]" classname="com.bridgelabz.uservalidation.EmailValidator" time="0.002"/>
+  <testcase name="givenEmail_whenIsValid_returntrue[4]" classname="com.bridgelabz.uservalidation.EmailValidator" time="0.002"/>
+  <testcase name="givenEmail_whenNull_shouldThrowInvalidMoodException[4]" classname="com.bridgelabz.uservalidation.EmailValidator" time="0.001"/>
+  <testcase name="givenEmail_whenIsValid_returntrue[5]" classname="com.bridgelabz.uservalidation.EmailValidator" time="0.003"/>
+  <testcase name="givenEmail_whenNull_shouldThrowInvalidMoodException[5]" classname="com.bridgelabz.uservalidation.EmailValidator" time="0.002"/>
+  <testcase name="givenEmail_whenIsValid_returntrue[6]" classname="com.bridgelabz.uservalidation.EmailValidator" time="0.001"/>
+  <testcase name="givenEmail_whenNull_shouldThrowInvalidMoodException[6]" classname="com.bridgelabz.uservalidation.EmailValidator" time="0.0"/>
+  <testcase name="givenEmail_whenIsValid_returntrue[7]" classname="com.bridgelabz.uservalidation.EmailValidator" time="0.0"/>
+  <testcase name="givenEmail_whenNull_shouldThrowInvalidMoodException[7]" classname="com.bridgelabz.uservalidation.EmailValidator" time="0.002"/>
+  <testcase name="givenEmail_whenIsValid_returntrue[8]" classname="com.bridgelabz.uservalidation.EmailValidator" time="0.001"/>
+  <testcase name="givenEmail_whenNull_shouldThrowInvalidMoodException[8]" classname="com.bridgelabz.uservalidation.EmailValidator" time="0.001"/>
+  <testcase name="givenEmail_whenIsValid_returntrue[9]" classname="com.bridgelabz.uservalidation.EmailValidator" time="0.001"/>
+  <testcase name="givenEmail_whenNull_shouldThrowInvalidMoodException[9]" classname="com.bridgelabz.uservalidation.EmailValidator" time="0.001"/>
+  <testcase name="givenEmail_whenIsValid_returntrue[10]" classname="com.bridgelabz.uservalidation.EmailValidator" time="0.0"/>
+  <testcase name="givenEmail_whenNull_shouldThrowInvalidMoodException[10]" classname="com.bridgelabz.uservalidation.EmailValidator" time="0.0"/>
+  <testcase name="givenEmail_whenIsValid_returntrue[11]" classname="com.bridgelabz.uservalidation.EmailValidator" time="0.0"/>
+  <testcase name="givenEmail_whenNull_shouldThrowInvalidMoodException[11]" classname="com.bridgelabz.uservalidation.EmailValidator" time="0.001"/>
+  <testcase name="givenEmail_whenIsValid_returntrue[12]" classname="com.bridgelabz.uservalidation.EmailValidator" time="0.0"/>
+  <testcase name="givenEmail_whenNull_shouldThrowInvalidMoodException[12]" classname="com.bridgelabz.uservalidation.EmailValidator" time="0.001"/>
+  <testcase name="givenEmail_whenIsValid_returntrue[13]" classname="com.bridgelabz.uservalidation.EmailValidator" time="0.001"/>
+  <testcase name="givenEmail_whenNull_shouldThrowInvalidMoodException[13]" classname="com.bridgelabz.uservalidation.EmailValidator" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
