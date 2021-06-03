@@ -1,27 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.bridgelabz.uservalidation.UserRegistrationTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2021-05-31T18:13:36" hostname="DESKTOP-I19OHT9" time="0.066">
+<testsuite name="com.bridgelabz.uservalidation.UserRegistrationTest" tests="14" skipped="0" failures="0" errors="0" timestamp="2021-06-03T09:07:07" hostname="DESKTOP-I19OHT9" time="0.047">
   <properties/>
-  <testcase name="givenLastName_whenInvalid_returnFalse" classname="com.bridgelabz.uservalidation.UserRegistrationTest" time="0.009"/>
-  <testcase name="givenLastName_whenShort_returnFalse" classname="com.bridgelabz.uservalidation.UserRegistrationTest" time="0.019"/>
-  <testcase name="givenFirstName_whenProper_returnTrue" classname="com.bridgelabz.uservalidation.UserRegistrationTest" time="0.006"/>
-  <testcase name="givenMobileNumber_whenValid_returnTrue" classname="com.bridgelabz.uservalidation.UserRegistrationTest" time="0.009"/>
-  <testcase name="givenLastName_whenProper_returnTrue" classname="com.bridgelabz.uservalidation.UserRegistrationTest" time="0.006"/>
-  <testcase name="givenFirstName_whenInvalid_returnFalse" classname="com.bridgelabz.uservalidation.UserRegistrationTest" time="0.003"/>
-  <testcase name="givenFirstName_whenShort_returnFalse" classname="com.bridgelabz.uservalidation.UserRegistrationTest" time="0.005"/>
-  <system-out><![CDATA[lastName : arbaz
-Sad
-lastName : Fa
-Sad
-firstName : Faizan
-Happy
-MobileNumber : 91 7775962642
-Happy
-lastName : Faizan
-Happy
-firstName : faizan
-Sad
-firstName : Fa
-Sad
-]]></system-out>
+  <testcase name="givenLastName_whenInvalid_returnFalse" classname="com.bridgelabz.uservalidation.UserRegistrationTest" time="0.001"/>
+  <testcase name="givenFirstName_whenNull_shouldThrowInvalidMoodException" classname="com.bridgelabz.uservalidation.UserRegistrationTest" time="0.0"/>
+  <testcase name="givenMobileNumber_whenNotProper_returnFalse" classname="com.bridgelabz.uservalidation.UserRegistrationTest" time="0.002"/>
+  <testcase name="givenLastName_whenShort_returnFalse" classname="com.bridgelabz.uservalidation.UserRegistrationTest" time="0.001"/>
+  <testcase name="givenMobileNumber_whenShort_returnFalse" classname="com.bridgelabz.uservalidation.UserRegistrationTest" time="0.001"/>
+  <testcase name="givenFirstName_whenProper_returnTrue" classname="com.bridgelabz.uservalidation.UserRegistrationTest" time="0.014"/>
+  <testcase name="givenMood_whenSad_returnHappy" classname="com.bridgelabz.uservalidation.UserRegistrationTest" time="0.001"/>
+  <testcase name="givenMobileNumber_whenValid_returnTrue" classname="com.bridgelabz.uservalidation.UserRegistrationTest" time="0.001"/>
+  <testcase name="givenMobileNumber_whenNull_shouldThrowInvalidMoodException" classname="com.bridgelabz.uservalidation.UserRegistrationTest" time="0.001"/>
+  <testcase name="givenLastName_whenNull_shouldThrowInvalidMoodException" classname="com.bridgelabz.uservalidation.UserRegistrationTest" time="0.001"/>
+  <testcase name="givenLastName_whenProper_returnTrue" classname="com.bridgelabz.uservalidation.UserRegistrationTest" time="0.001"/>
+  <testcase name="givenFirstName_whenInvalid_returnFalse" classname="com.bridgelabz.uservalidation.UserRegistrationTest" time="0.0"/>
+  <testcase name="givenFirstName_whenShort_returnFalse" classname="com.bridgelabz.uservalidation.UserRegistrationTest" time="0.001"/>
+  <testcase name="givenMood_whenHappy_returnHappy" classname="com.bridgelabz.uservalidation.UserRegistrationTest" time="0.011"/>
+  <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

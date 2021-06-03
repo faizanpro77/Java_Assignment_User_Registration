@@ -9,36 +9,61 @@ public class UserRegistration {
     private static final String MOBILE_PATTERN = "^[0-9]{2}+[ ]+[0-9]{10}$";
     private static final  String PASSWORD_PATTERN = "^(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*])(?!(?:.*[!@#$%^&*]){2})[a-zA-Z0-9!@#$%^&*]{8,}$";
 
-    public boolean validateFirstName(String firstName) {
-        System.out.println("firstName : " + firstName);
+    public boolean validateFirstName(String firstName) throws UserRegistrationInvalidException {
         try {
             return patternChecker(firstName, NAME_PATTERN);
-        } catch (Exception ex) {
-        throw new InvalidUserRegistrationException("Invalid name enter correct name");
+        }catch (UserRegistrationInvalidException ex){
+           throw new UserRegistrationInvalidException("Invalid firstname");
         }
-    }
-    public boolean validateLastName(String lastName) {
-        System.out.println("lastName : "+lastName);
-        return patternChecker(lastName, NAME_PATTERN);
-    }
+        }
 
-    public boolean validateEmail(String email) {
-        return patternChecker(email, EMAIL_PATTERN);
-    }
+    public boolean validateLastName(String lastName) throws UserRegistrationInvalidException {
+        try {
+            return patternChecker(lastName, NAME_PATTERN);
+        } catch (Exception ex){
+            throw new UserRegistrationInvalidException("Invalid lastname");
+        }
+        }
 
-    public boolean validateMobileNumber(String mobileNumber) {
-        System.out.println("MobileNumber : "+mobileNumber);
-        return patternChecker(mobileNumber, MOBILE_PATTERN);
-    }
+    public boolean validateEmail(String email) throws UserRegistrationInvalidException {
+        try {
+            return patternChecker(email, EMAIL_PATTERN);
+        } catch (UserRegistrationInvalidException ex) {
+            throw new UserRegistrationInvalidException("invalid Email");
+        }
+        }
+
+    public boolean validateMobileNumber(String mobileNumber) throws UserRegistrationInvalidException {
+        try {
+            return patternChecker(mobileNumber, MOBILE_PATTERN);
+        } catch (Exception ex){
+            throw new UserRegistrationInvalidException("Invalid mobile number");
+        }
+        }
 
     public boolean validatePassword(String password) {
-        System.out.println("Password : "+password);
-        return patternChecker(password, PASSWORD_PATTERN);
+        try {
+            return patternChecker(password, PASSWORD_PATTERN);
+        } catch (UserRegistrationInvalidException ex) {
+            throw new UserRegistrationInvalidException("Invalid password");
+        }
+        }
+
+    private static boolean patternChecker(String input, String inputPattern) throws UserRegistrationInvalidException {
+        Pattern pattern = Pattern.compile(inputPattern);
+        try {
+            Matcher matcher = pattern.matcher(input);
+            return matcher.find();
+        } catch (NullPointerException ex) {
+            throw new UserRegistrationInvalidException("Invalid input");
+        }
     }
 
-    private static boolean patternChecker(String input, String inputPattern) {
-        Pattern pattern = Pattern.compile(inputPattern);
-        Matcher matcher =  pattern.matcher(input);
-        return  matcher.find();
+    public String moodAnalyseHappy(String firstName, String lastName, String email, String mobileNumber, String password) {
+        if(validateFirstName(firstName) == true && validateLastName(lastName) == true && validateEmail(email) == true
+        && validateMobileNumber(mobileNumber) && validatePassword(password) == true)
+            return "HAPPY";
+        else
+            return "SAD";
     }
 }

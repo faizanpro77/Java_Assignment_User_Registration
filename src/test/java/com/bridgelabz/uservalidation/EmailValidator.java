@@ -26,13 +26,18 @@ public class EmailValidator {
         }
 
     @Test
-    public void emailChecker() {
-        System.out.println("email ids -->" + this.email);
+    public void givenEmail_whenIsValid_returntrue() {
         boolean result = userRegistration.validateEmail(email);
-        if(result)
-            System.out.println("Happy");
-        else
-            System.out.println("Sad");
         Assert.assertEquals(this.status, result);
+    }
+
+    @Test
+    public void givenEmail_whenNull_shouldThrowInvalidMoodException() {
+        UserRegistration userRegistration = new UserRegistration();
+        try {
+            userRegistration.validateEmail(null);
+        } catch (UserRegistrationInvalidException ex) {
+            Assert.assertEquals(UserRegistrationInvalidException.class, ex.getClass());
+        }
     }
 }
