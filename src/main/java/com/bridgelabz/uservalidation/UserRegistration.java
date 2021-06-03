@@ -1,7 +1,6 @@
 package com.bridgelabz.uservalidation;
 
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
+import java.util.function.Predicate;
 
 public class UserRegistration {
     private static final String NAME_PATTERN = "^[A-Z][a-z]{3,}";
@@ -50,10 +49,12 @@ public class UserRegistration {
         }
 
     private static boolean patternChecker(String input, String inputPattern) throws UserRegistrationInvalidException {
-        Pattern pattern = Pattern.compile(inputPattern);
         try {
-            Matcher matcher = pattern.matcher(input);
-            return matcher.find();
+            Predicate<String> validCheck = n -> n.matches(inputPattern);
+            if (validCheck.test(input))
+                return true;
+             else
+                return false;
         } catch (NullPointerException ex) {
             throw new UserRegistrationInvalidException("Invalid input");
         }

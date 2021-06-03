@@ -26,7 +26,7 @@ public class EmailValidator {
         }
 
     @Test
-    public void givenEmail_whenIsValid_returntrue() {
+    public void givenEmail_whenIsValid_returnTrue() {
         boolean result = userRegistration.validateEmail(email);
         Assert.assertEquals(this.status, result);
     }
